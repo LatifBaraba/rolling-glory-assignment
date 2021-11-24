@@ -1,0 +1,29 @@
+.filter-select__control {
+    border-radius: 33px !important;
+    border: 1px solid #bebebe;
+    font-size: 12px !important;
+    min-height: 35px !important;
+}
+
+.filter-select__indicator {
+    padding: 0 8px !important;
+}
+
+.filter-select__value-container {
+    padding: 0 8px !important;
+    .filter-select__input-container {
+        margin: 0 !important;
+    }
+}
+
+.filter-select__indicator-separator {
+    display: none;
+}
+
+.filter-select__menu {
+    margin: 0 !important;
+    .filter-select__menu-list {
+        padding: 0 !important;
+        font-size: 12px !important;
+    }
+}

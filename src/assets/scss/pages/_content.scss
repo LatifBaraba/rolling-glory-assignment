@@ -1,0 +1,177 @@
+@import '../variables';
+
+.content {
+    padding: 20px;
+    .product-list-filter {
+        .filter-title {
+            border-bottom: 1px solid #d5d5d5;
+            padding-bottom: 20px;
+            h2 {
+                font-size: 17px;
+                font-weight: bold;
+            }
+        }
+        .filter-content {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #d5d5d5;
+            color: #888888;
+            .filter-name {
+                font-size: 1rem;
+            }
+        }
+    }
+    .product-list {
+        border-bottom: 1px solid #d5d5d5;
+        padding-bottom: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        display: block;
+        .list-title {
+            h2 {
+                font-size: 17px;
+                font-weight: bold;
+            }
+        }
+        .list-filter {
+            display: flex;
+            flex-direction: row;
+            color: $font-color-gray;
+            span {
+                margin-right: 10px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.product-detail {
+    padding: 10px;
+    .product-detail-content {
+        position: relative;
+        .img-label {
+            position: absolute;
+            top: 0;
+            right: 1rem;
+        }
+    }
+    .product-image {
+        img {
+            width: 80%;
+        }
+    }
+    .product-name {
+        font-size: 24px;
+        font-weight: bold;
+        color: #262626;
+    }
+    .review-count {
+        font-size: 14px;
+        color: #838eab;
+    }
+    .img-point-detail {
+        width: 20px;
+        height: 20px;
+        margin: auto 0;
+    }
+    .star {
+        width: 15px;
+    }
+    .poins-value {
+        font-size: 24px;
+        font-weight: bold;
+        color: #74b71b;
+    }
+    .in-stock {
+        font-size: 14px;
+        font-weight: 600;
+        color: #006a4e;
+    }
+    .under-stock {
+        font-size: 14px;
+        font-weight: 600;
+        color: red;
+    }
+    .review-count {
+        font-size: 14px;
+        font-weight: 600;
+        color: #838eab;
+    }
+    .product-desc {
+        font-size: 14px;
+        color: #262626;
+    }
+    .description > p {
+        line-height: 50px;
+    }
+    .btn-counter {
+        border: transparent;
+        width: 35px;
+        height: 35px;
+    }
+    .input-counter {
+        background-color: #fff;
+        border: transparent;
+        text-align: center;
+        width: 40px;
+    }
+    .btn-reedem {
+        color: white;
+        background-color: #006a4e !important;
+        border: 1px solid transparent;
+        border-radius: 30px;
+        font-size: 14px;
+        padding: 5px 50px;
+        transition: 0.2s;
+        min-height: 45px;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    .btn-add-to-cart {
+        color: #74b71c;
+        border: 1px solid #74b71c !important;
+        background-color: transparent;
+        border-radius: 30px;
+        font-size: 14px;
+        padding: 5px 50px;
+        transition: 0.2s;
+        min-height: 45px;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    .product-specification {
+        .nav-tabs {
+            .nav-items {
+                background: #000;
+                // border-bottom: 1px solid #e6e8ee !important;
+                .nav-button {
+                    border-radius: 0 !important;
+                }
+            }
+            .nav-link {
+                border: transparent;
+                color: #74b71b !important;
+                font-size: 16px !important;
+                &:hover {
+                    color: #000 !important;
+                }
+            }
+            .nav-link.active,
+            .nav-tabs .nav-item.show .nav-link {
+                border-bottom: 3px solid #74b71b;
+            }
+        }
+        ul li button {
+            border-radius: 0 !important;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    button {
+        padding: 5px 30px !important;
+    }
+}
